@@ -148,7 +148,7 @@
     <div id="status" class="status warning">🟡 Servicio no verificado</div>
   </div>
 
-  <div class="card" id="chatContainer" style="display:none;">
+  <div class="card" id="chatContainer" style="visibility:hidden;">
     <h3>💬 Chat</h3>
     <div id="root"></div>
   </div>
@@ -178,7 +178,7 @@ async function checkService() {
 }
 
 function loadChat() {
-  document.getElementById("chatContainer").style.display = "block";
+  document.getElementById("chatContainer").style.visibility = "visible";
   window.wxOConfiguration = {
     orchestrationID: "42379027d430475b88345e10c0b3a286_f9c6e89a-063b-4b08-a991-345a2cf42dfc",
     hostURL: "https://us-south.watson-orchestrate.cloud.ibm.com",
